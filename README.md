@@ -1,2 +1,2 @@
 # cSharp_snapszer
- Spnapser card game, created it in C#. The game developed with mySQL database on localhost.
+ Spnapser card game, created in C#. The game developed, with mySQL database on localhost.
