@@ -1,0 +1,1 @@
+lmi1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Csaba\\Documents\\NetBeansProjects\\hatvanhat\\kepek\\level_also.png"));

@@ -1,0 +1,46 @@
+        
+        roundWinPlayer = false;
+        
+        if(playerDroped.getColor().equals(adu.getColor()) && !miDroped.getColor().equals(adu.getColor())){
+            roundWinPlayer = true;
+            playerPoints += playerDroped.getValue() + miDroped.getValue();
+            jLplayerPoints.setText(String.valueOf(playerPoints));
+        }else if(!playerDroped.getColor().equals(adu.getColor()) && miDroped.getColor().equals(adu.getColor())){
+            roundWinPlayer = false;
+            miPoints += playerDroped.getValue() + miDroped.getValue();
+            jLmiPoints.setText(String.valueOf(miPoints));
+        }
+        else if(playerDroped.getColor().equals(adu.getColor()) && miDroped.getColor().equals(adu.getColor())){
+            roundWinPlayer = playerDroped.getValue() > miDroped.getValue();
+            if(roundWinPlayer){
+                playerPoints += playerDroped.getValue() + miDroped.getValue();
+                jLplayerPoints.setText(String.valueOf(playerPoints));
+            }else{
+                miPoints += playerDroped.getValue() + miDroped.getValue();
+                jLmiPoints.setText(String.valueOf(miPoints));
+            }                
+        }else if(!playerDroped.getColor().equals(adu.getColor()) && !miDroped.getColor().equals(adu.getColor())){
+            if(miDroped.getColor().equals(playerDroped.getColor())){
+                if(playerDroped.getValue() > miDroped.getValue()){
+                    roundWinPlayer = true;
+                    playerPoints += playerDroped.getValue() + miDroped.getValue();
+                    jLplayerPoints.setText(String.valueOf(playerPoints));            
+                }
+                else if(playerDroped.getValue() < miDroped.getValue()){
+                    roundWinPlayer = false;
+                    miPoints += playerDroped.getValue() + miDroped.getValue();
+                    jLmiPoints.setText(String.valueOf(miPoints));
+                }
+            }
+            else if(hivoPlayer){
+                roundWinPlayer = true;
+                playerPoints += playerDroped.getValue() + miDroped.getValue();
+                jLplayerPoints.setText(String.valueOf(playerPoints));
+            }
+            else if(!hivoPlayer){
+                roundWinPlayer = false;
+                miPoints += playerDroped.getValue() + miDroped.getValue();
+                jLmiPoints.setText(String.valueOf(miPoints));
+            }
+        }
+        playerTurn = roundWinPlayer;

@@ -1,0 +1,1236 @@
+    
+    public void miAlsoraTizessel(){
+        int keres = -1;
+        tizes = false;
+        card card;
+        switch (playerDroped.getColor()) {
+            case "zold":
+                if(miHand.containsKey("zoldTizes")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 10) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 0:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false);
+                            break;
+                        case 1:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);  
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;      
+                        default:
+                            System.out.println("Nincs megfelelõ tizes a kezében!");
+                    }
+                }
+                break;
+            case "makk":
+                if(miHand.containsKey("makkTizes")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 10) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 0:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 1:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false); 
+                            break;
+                        default:
+                            System.out.println("Nincs megfelelõ tizes a kezében!");
+                    }                    
+                }
+                break;
+            case "piros":
+                if(miHand.containsKey("pirosTizes")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 10) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);  
+                            break;
+                        default:
+                            System.out.println("Nincs megfelelõ tizes a kezében!");
+                    }                    
+                }
+                break;
+            case "tok":
+                if(miHand.containsKey("tokTizes")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 10) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;
+                        default:
+                            System.out.println("Nincs megfelelõ tizes a kezében!");
+                    }                    
+                }
+                break;
+           
+        }
+    }
+    
+    public void miAlsoraAsszal(){
+        int keres = -1;
+        asz = false;
+        card card;
+        switch (playerDroped.getColor()) {
+            case "zold":
+                if(miHand.containsKey("zoldAsz")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 11) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false);
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);  
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;
+                        default:
+                            System.out.println("Nincs megfelelõ ász a kezében!");
+                    }
+                }
+                break;
+            case "makk":
+                if(miHand.containsKey("makkAsz")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 11) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false); 
+                            break;                           
+                    }                    
+                }
+                break;
+            case "piros":
+                if(miHand.containsKey("pirosAsz")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 11) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);  
+                            break;                           
+                    }
+                }
+                break;
+            case "tok":
+                if(miHand.containsKey("tokAsz")){
+                    asz = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 11) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;
+           
+        }
+    }
+    
+    public void miAlsoraAlsoval(){
+        int keres = -1;
+        also = false;
+        card card;
+        switch (playerDroped.getColor()) {
+            case "zold":
+                if(miHand.containsKey("zoldAlso")){
+                    also = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 2) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false);
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);  
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;
+            case "makk":
+                if(miHand.containsKey("makkAlso")){
+                    also = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 2) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false); 
+                            break;                           
+                    }
+                }
+                break;
+            case "piros":
+                if(miHand.containsKey("pirosAlso")){
+                    also = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 2) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);  
+                            break;                           
+                    }
+                }
+                break;
+            case "tok":
+                if(miHand.containsKey("tokAlso")){
+                    also = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 2) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;          
+        }
+    }
+    
+    public void miAlsoraFelsovel(){
+        int keres = -1;
+        felso = false;
+        card card;
+        switch (playerDroped.getColor()) {
+            case "zold":
+                if(miHand.containsKey("zoldFelso")){
+                    felso = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 3) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false);
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);  
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;
+            case "makk":
+                if(miHand.containsKey("makkFelso")){
+                    felso = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 3) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false); 
+                            break;                           
+                    }
+                }
+                break;
+            case "piros":
+                if(miHand.containsKey("pirosFelso")){
+                    felso = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 3) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);  
+                            break;                           
+                    }
+                }
+                break;
+            case "tok":
+                if(miHand.containsKey("tokFelso")){
+                    felso = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 3) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;
+           
+        }
+    }
+    
+    public void miAlsoraKirallyal(){
+        int keres = -1;
+        kiraly = false;
+        card card;
+        switch (playerDroped.getColor()) {
+            case "zold":
+                if(miHand.containsKey("zoldKiraly")){
+                    kiraly = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 4) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false);
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);  
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                    kiraly = true;
+
+                }
+                break;
+            case "makk":
+                if(miHand.containsKey("makkKiraly")){
+                    kiraly = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 4) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false); 
+                            break;                           
+                    }
+                }
+                break;
+            case "piros":
+                if(miHand.containsKey("pirosKiraly")){
+                    kiraly = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 4) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);  
+                            break;                           
+                    }
+                }
+                break;
+            case "tok":
+                if(miHand.containsKey("tokKiraly")){
+                    kiraly = true;
+                    Object[] cards = miHand.values().toArray();
+                    for (int i = 0; i < cards.length || keres!=-1; i++) {
+                        card cardKeres = (card) cards[i];
+                        if (cardKeres.getValue() == 4) {
+                            keres = i;
+                        }                        
+                    }
+                    switch (keres) {
+                        case 1:
+                            card = miHand.get(miHandName1);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName1);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH1.setVisible(false); 
+                            break;
+                        case 2:
+                            card = miHand.get(miHandName2);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName2);
+                            System.out.println("miHandSize: "+miHand.size());
+                            miH2.setVisible(false); 
+                            break;
+                        case 3:
+                            card = miHand.get(miHandName3);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName3);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH3.setVisible(false); 
+                            break;
+                        case 4:
+                            card = miHand.get(miHandName4);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName4);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH4.setVisible(false);   
+                            break;
+                        case 5:
+                            card = miHand.get(miHandName5);
+                            miDropValue = card.getValue();
+                            miDrop.setIcon(new javax.swing.ImageIcon(card.getPath()));
+                            miDroped = card;
+                            miHand.remove(miHandName5);
+                            System.out.println("miHandSize: "+miHand.size());            
+                            miH5.setVisible(false);   
+                            break;                           
+                    }
+                }
+                break;
+           
+        }
+    }

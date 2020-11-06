@@ -1,0 +1,14 @@
+C:\Users\me\source\repos\unitTester\bin\Debug\unitTester.exe.config
+C:\Users\me\source\repos\unitTester\bin\Debug\unitTester.exe
+C:\Users\me\source\repos\unitTester\bin\Debug\unitTester.pdb
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.csprojAssemblyReference.cache
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.Form1.resources
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.Properties.Resources.resources
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.csproj.GenerateResource.cache
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.csproj.CoreCompileInputs.cache
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.exe
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.pdb
+C:\Users\me\source\repos\unitTester\bin\Debug\MySql.Data.dll
+C:\Users\me\source\repos\unitTester\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\me\source\repos\unitTester\bin\Debug\Renci.SshNet.dll
+C:\Users\me\source\repos\unitTester\obj\Debug\unitTester.csproj.CopyComplete
